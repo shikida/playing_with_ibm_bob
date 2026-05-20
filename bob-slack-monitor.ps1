@@ -165,7 +165,7 @@ while ($true) {
     
     # Save ALL new messages to complete history
     Save-MessagesToFile -Messages $newMessages -FilePath "conversa.txt" -Append $true
-    Write-Host "[$timestamp] History updated in conversa.txt ($($newMessages.Count) messages added)" -ForegroundColor Green
+    Write-Host "[$timestamp] History updated in chat.txt ($($newMessages.Count) messages added)" -ForegroundColor Green
     
     # Check if there are recent messages to react to
     if ($recentMessages.Count -eq 0) {
@@ -190,7 +190,7 @@ while ($true) {
     Write-Host "[$timestamp] Executing Bob to react to messages..." -ForegroundColor Magenta
     
     try {
-        $bobCommand = "read the conversa.txt file to understand the full context, read the personalidade.txt file to determine your behavior and send a single message reacting to messages with timestamps from the last 10 seconds to the #hackathon channel on slack"
+        $bobCommand = "read the chat.txt file to understand the full context, read the personality.txt file to determine your behavior and send a single message reacting to messages with timestamps from the last 10 seconds to the #hackathon channel on slack"
         
         bob $bobCommand --allowed-mcp-server-names slack-mcp
         
