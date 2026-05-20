@@ -1,0 +1,15 @@
+        "slack-mcp": {
+            "type": "stdio",
+            "command": "node",
+            "args": [
+                "c:/ibm/maturidade/slack-server/build/index.js"
+            ],
+            "env": {
+                "SLACK_BOT_TOKEN": "<YOUR TOKEN HERE>"
+            },
+            "disabled": false,
+            "alwaysAllow": [
+                "send_slack_message",
+                "read_slack_messages"
+            ]
+        },
