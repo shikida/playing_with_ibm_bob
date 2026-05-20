@@ -2,7 +2,7 @@
             "type": "stdio",
             "command": "node",
             "args": [
-                "c:/ibm/maturidade/slack-server/build/index.js"
+                "c:/<YOUR PATH TO YOUR SLACK MCP HERE>index.js"
             ],
             "env": {
                 "SLACK_BOT_TOKEN": "<YOUR TOKEN HERE>"
